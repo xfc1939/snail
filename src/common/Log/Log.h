@@ -68,10 +68,10 @@ namespace snail {
             Loglevel currentLogLevel_;
         };
 }
-#define Debug() (snail::Log() << snail::Log::Debug <<__TIME__ << __FILE__ << __LINE__)
-#define Trace() (snail::Log() << snail::Log::Trace <<__TIME__ << __FILE__ << __LINE__)
-#define Warn()  (snail::Log() << snail::Log:Warn <<__TIME__ << __FILE__ << __LINE__)
-#define Error() (snail::Log() << snail::Log::Error <<__TIME__ << __FILE__ << __LINE__)
+#define Debug() (snail::Log() << snail::Log::Debug <<__TIME__ << __FUNCTION__ << __LINE__)
+#define Trace() (snail::Log() << snail::Log::Trace <<__TIME__ << __FUNCTION__ << __LINE__)
+#define Warn()  (snail::Log() << snail::Log:Warn <<__TIME__ << __FUNCTION__ << __LINE__)
+#define Error() (snail::Log() << snail::Log::Error <<__TIME__ << __FUNCTION__ << __LINE__)
 
 
 #endif //SNAIL_LOGCONTEXT_H
